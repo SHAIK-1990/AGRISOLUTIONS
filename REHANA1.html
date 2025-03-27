@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrisolutions</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://media.istockphoto.com/id/503646746/photo/farmer-spreading-fertilizer-in-the-field-wheat.jpg?s=2048x2048&w=is&k=20&c=1jNtd6Nv3SxxV3JLOmyV4tnplXSzb1LKgv7S4hkxb4E='); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="container" id="selectionForm">
+        <h1>AGRISOLUTIONS</h1>
+        
+        <h2>State</h2>
+        <select id="state" required>
+            <option value="">Select your state</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="TG">Telangana</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="TN">Tamil Nadu</option>
+        </select> 
+
+        <h2>District</h2>
+        <select id="district" required>
+            <option value="">Select your district</option>
+            <option value="gudiwada">Gudiwada</option>
+            <option value="krishna">Krishna</option>
+            <option value="visakhapatnam">Visakhapatnam</option>
+            <option value="prakasam">Prakasam</option>
+            <option value="nellore">Nellore</option>
+            <option value="khammam">Khammam</option>
+            <option value="nalgonda">Nalgonda</option>
+            <option value="warangal">Warangal</option>
+        </select>
+
+        <h2>Month</h2>
+        <select id="month" required>
+            <option value="">Select yield Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+
+<script>
+    document.getElementById('selectionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var state = document.getElementById('state').value;
+        var district = document.getElementById('district').value;
+        var month = document.getElementById('month').value;
+
+        if (!state || !district || !month) {
+            alert("Please select all fields before submitting.");
+        } else {
+            // Redirect to another page (use relative or absolute URL)
+            window.location.href = "file:///C:/Users/User/Desktop/WEBSITE/page.html"; 
+        }
+    });
+</script>
+
+</script>
+</body>
+</html>

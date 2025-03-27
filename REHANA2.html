@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://media.istockphoto.com/id/1212035778/photo/money-bag-on-the-background-of-agricultural-crops-in-the-hand-of-the-farmer-agricultural.jpg?s=2048x2048&w=is&k=20&c=plwCI5j9wlaM22Hv6oHVtpb5zY8PBdp8E2bIrKTeklE='); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="container" id="weatherForm">
+        <h1><b>Weather Forecasting</b></h1>
+        
+        <p>
+            <label><b>Type Of Soil:</b></label>
+            <input type="text" placeholder="e.g. Black Soil" required>
+        </p>
+
+        <p>
+            <label><b>Type Of Crop:</b></label>
+            <input type="text" placeholder="e.g. Paddy" required>
+        </p>
+
+        <p>
+            <label><b>Investment:</b></label>
+            <input type="number" placeholder="e.g. 200000" required>
+        </p>
+
+        <p>
+            <label><b>Pesticides:</b></label>
+            <input type="text" placeholder="e.g. Urea" required>
+        </p>
+
+        <p>
+            <label><b>Soil Testing Center:</b></label>
+            <input type="text" placeholder="e.g. Gudiwada" required>
+        </p>
+
+        <p>
+            <label><b>Storage Of Harvesting:</b></label>
+            <input type="text" placeholder="e.g. Gudlavalleru" required>
+        </p>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <script>
+        document.getElementById('weatherForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the form from refreshing the page
+            
+            // Redirect to the next page (replace with the actual page URL)
+            window.location.href = "nextpage.html"; 
+        });
+    </script>
+
+</body>
+</html>
